@@ -1,0 +1,32 @@
+day 44 lesson 383
+h1,2,.. p
+block - takes 100% width
+inline - takes as much as they need 
+
+
+box model {
+  https://upload.wikimedia.org/wikipedia/commons/7/7a/Boxmodell-detail.png
+}
+
+
+display {
+  inline - divide same line;
+  block - divide new line;
+  inline-block - you can change width and keep in same line;
+  none - remove element from website as it did not exist   ->  also try "visabiliti:hidden"
+}
+
+
+position{
+  static - by default;
+  relative - relative to how it would be to statick example left:30px is left 30 from default L R T B
+	* can overlap other elements!
+  absulute - relative to the nearest parent
+
+ 
+float and clear: (use only to wrap text around photos. Not for possitioning) 
+  div_parent
+  div-1 , div-2 div-3
+    div-1 float:left - moves to left div-2 automaticly moves to right
+       div-3 {clear:left} - then left is not applied
+
