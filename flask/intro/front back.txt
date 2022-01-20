@@ -1,0 +1,2 @@
+frontend - html css js angular react
+back end - node flask django
