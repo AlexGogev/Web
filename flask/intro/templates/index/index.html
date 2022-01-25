@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>{{time}}</title>
+	<h2> hello</h2>
+	<p> <a href="{{url_for('card')}}"> card </a> </p>
+	<p> <a href="{{url_for('blog')}}"> blog </a> </p>
+	<p> <a href="{{url_for('name', name_guess = 'alex')}}"> name check </a> </p>
+		<!--with coma you can pass the argument to the function-->
+		<!-- add "" quotes for strings. not needed for integers-->
+	<p> {{time}}</p>
+</head>
+<body>
+
+</body>
+</html>
