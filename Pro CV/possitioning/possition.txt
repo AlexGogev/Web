@@ -30,3 +30,5 @@ float and clear: (use only to wrap text around photos. Not for possitioning)
     div-1 float:left - moves to left div-2 automaticly moves to right
        div-3 {clear:left} - then left is not applied
 
+
+z-index: relative or absolute : 0 is defoult -1, 1, 2 higher priority 
