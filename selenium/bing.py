@@ -1,3 +1,8 @@
+"""
+Daily points from bing search
+automated.
+"""
+
 from selenium import webdriver
 import time
 from selenium.webdriver.common.keys import Keys
@@ -44,15 +49,23 @@ yes.click()
 
 time.sleep(1)
 main_search = driver.find_element_by_xpath('/html/body/div[1]/div/div[3]/div[2]/form/input[1]')
-main_search.send_keys("number ")
+main_search.send_keys("number  ")
 main_search.send_keys(Keys.ENTER)
 
 time.sleep(1.3)
-for i in range(30):
+for i in range(1,30):
     search_loop = driver.find_element_by_class_name("b_searchbox")
     search_loop.click()
     time.sleep(0.3)
-    search_loop.send_keys(Keys.BACKSPACE)
+    if i > 10:
+        search_loop.send_keys(Keys.BACKSPACE)
+        search_loop.send_keys(Keys.BACKSPACE)
+
+    else:
+        search_loop.send_keys(Keys.BACKSPACE)
     search_loop.send_keys(i)
     search_loop.send_keys(Keys.ENTER)
     time.sleep(1)
+    print(f'looping search: {i} done...')
+
+print("Completed")
