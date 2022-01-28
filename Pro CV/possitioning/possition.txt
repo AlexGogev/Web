@@ -32,3 +32,9 @@ float and clear: (use only to wrap text around photos. Not for possitioning)
 
 
 z-index: relative or absolute : 0 is defoult -1, 1, 2 higher priority 
+
+h1,h2,h3 -> for all use comma
+h1 p -> targets p inside h1
+.contaner.container_inside -> targets multiple containers in the same element <div class="contaner container_inside"> 
+
+
