@@ -3,19 +3,22 @@ Daily points from bing search
 automated.
 """
 
+import os
 from selenium import webdriver
 import time
 from selenium.webdriver.common.keys import Keys
-import os
+
 
 USER_NAME = ""
 PASSWORD = os.environ["password"]
 user = input("1 For Anna \n2 For Alex\n---> ")
+
 if user == "1":
     USER_NAME = os.environ["AnnaEmail"]
 elif user == "2":
     USER_NAME = os.environ["AlexEmail"]
-
+else:
+    print("invalid input")
 
 driver = webdriver.Chrome(executable_path="chromedriver.exe")
 driver.get("https://www.bing.com")
@@ -31,7 +34,7 @@ user_field = driver.find_element_by_xpath('//*[@id="i0116"]')
 user_field.click()
 user_field.send_keys(USER_NAME)
 
-time.sleep(1.5)
+time.sleep(1)
 next = driver.find_element_by_xpath('/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div[1]/div[3]/div/div/div/div[4]/div/div/div/div/input')
 next.click()
 
@@ -39,7 +42,7 @@ time.sleep(1.5)
 password = driver.find_element_by_xpath('/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div/div[3]/div/div[2]/div/div[3]/div/div[2]/input')
 password.send_keys(PASSWORD)
 
-time.sleep(2)
+time.sleep(0.5)
 login = driver.find_element_by_xpath('/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div/div[3]/div/div[2]/div/div[4]/div[2]/div/div/div/div/input')
 login.click()
 
@@ -67,5 +70,5 @@ for i in range(1,30):
     search_loop.send_keys(Keys.ENTER)
     time.sleep(1)
     print(f'looping search: {i} done...')
-
+driver.quit()
 print("Completed")
