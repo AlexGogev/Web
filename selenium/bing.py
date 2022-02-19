@@ -26,6 +26,7 @@ time.sleep(2)
 accept = driver.find_element_by_xpath('//*[@id="bnp_btn_accept"]/a')
 accept.click()
 
+time.sleep(1)
 sign_in = driver.find_element_by_xpath("/html/body/div[3]/div/div[3]/header/div[2]/div/a[1]/span[1]")
 sign_in.click()
 
