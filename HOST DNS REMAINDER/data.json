@@ -1,0 +1,18 @@
+{
+    "customer": [
+        {
+            "name": "Vasil Georgiev",
+            "email": "carglasspecialist@gmail.com",
+            "phone": "07774973332",
+            "website": "https://www.carglassspecialist.co.uk/",
+            "date": "2022-04-08"
+        },
+        {
+            "name": "1",
+            "email": "2",
+            "phone": "3",
+            "website": "4",
+            "date": "2023-04-11"
+        }
+    ]
+}

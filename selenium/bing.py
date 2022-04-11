@@ -13,12 +13,15 @@ USER_NAME = ""
 PASSWORD = os.environ["password"]
 user = input("1 For Anna \n2 For Alex\n---> ")
 
+
 if user == "1":
     USER_NAME = os.environ["AnnaEmail"]
 elif user == "2":
     USER_NAME = os.environ["AlexEmail"]
 else:
     print("invalid input")
+    quit()
+
 
 driver = webdriver.Chrome(executable_path="chromedriver.exe")
 driver.get("https://www.bing.com")
@@ -36,7 +39,7 @@ user_field.click()
 user_field.send_keys(USER_NAME)
 
 time.sleep(1)
-next = driver.find_element(by=By.XPATH, value='/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div[1]/div[3]/div/div/div/div[5]/div/div/div/div/input')
+next = driver.find_element(by=By.XPATH, value='/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div[1]/div[3]/div/div/div/div[4]/div/div/div/div/input')
 next.click()
 
 time.sleep(1.5)
