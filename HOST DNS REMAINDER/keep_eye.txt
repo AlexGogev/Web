@@ -1,9 +1,0 @@
-
-2022-04-11 
-check for payment: Name: 1, Web: 4, Phone: 3, Last payed: 2023-04-11    
-
-2022-04-11 
-check for payment: Name: 1, Web: 4, Phone: 3, Last payed: 2023-04-11    
-
-2022-04-11 
-check for payment: Name: 1, Web: 4, Phone: 3, Last payed: 2023-04-11    
