@@ -17,7 +17,7 @@ payload = f"q={to_translate}&target=bg"   #text and lang
 
 HEADERS = {
     "X-RapidAPI-Host": "google-translate1.p.rapidapi.com",
-    "X-RapidAPI-Key": "b86174402cmsh86154b8944cd90bp18e9b1jsn34de4180e9a7",
+    "X-RapidAPI-Key": "b86174402cmsh86154b8944cd90bp18e9b1jsn34de4180e9a7A",
    'content-type': "application/x-www-form-urlencoded"
    }
 
